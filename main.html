@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Event</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      /* Container to center content and add spacing */
+ .containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #273053;
+    color: white;
+    position: sticky;
+}
+
+/* Logo and title styling */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50px;
+    
+    
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+
+/* Menu styling */
+nav {
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+   /*  background-color: rgba(255, 255, 255, 0.2); */
+   color: #0dcad7;
+    border-radius: 5px;
+}
+
+/* Button styling */
+.menu li .button {
+    background-color: #007BFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu li .button:hover {
+    background-color: #0056b3;
+}
+
+/* Hamburger menu for mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        padding: 10px 0;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+    </style>
+</head>
+<body><header>
+    <div class="containers">
+        <div class="logo-title">
+            <img src="leadership-logo_1025-447.avif" alt="Logo" class="logo">
+            <h1 class="title">LEADERSHIP EVENT</h1>
+        </div>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="#home" class="home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#speaker">Speakers</a></li>
+                <li><a href="#schedule">Schedules</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#venu">Venue</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="button">Buy tickets</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </nav>
+    </div>
+</header>
+<section class="video" id="home" >
+    <div class="video-wrap">
+        <video autoplay muted loop class="background-video">
+            <source src="videos/pexels-pavel-danilyuk-8716790.mp4" type="video/mp4" >
+            Your browser does not support the video tag.
+        </video>
+    </div>
+        <div class="text">
+            <h1><u>Leadership</u><span>&nbsp;Conference</span></h1>
+            <p >2022</p>
+        </div>
+        <div>
+            <table>
+                <tr class="a">
+                    <th>July 12 to 18, 2022 </th>
+                    <th>Times Square, NY</th>
+                </tr>
+            </table>
+                <div>
+                    <p>
+                     <img src="down arrow.png" alt="down arrow" class="arrow">
+                    </p>
+                </div>
+                
+            </div>
+    <div class="card-container">
+        <div class="card1">
+            <div class="video-wrapper">
+                <iframe width="100%" height="200" src="videos/9150545-hd_1920_1080_24fps.mp4" 
+                title="Video 1" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="video-wrapper">
+                <iframe width="100%" height="200" src="videos/5700949-uhd_3840_2160_25fps.mp4" 
+                title="Video 2" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="video-wrapper">
+                <iframe width="100%" height="200" src="videos/855018-hd_1920_1080_24fps.mp4" 
+                title="Video 3" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </section>
